@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shisy - Inventory</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/items.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="upbar">
+            <div class="sidebarBtn" onclick="toggleSidebar()">
+                <span></span>
+            </div>
+            <h2>Inventory</h2> <img id="logo" src="icons/vt6zy-pzir9.svg" alt="Shisy logo"> 
+            <button>User</button>
+        </div>
+        <div class="sidebar">
+        <ul>
+            <li><a href="/"> <img src="icons/home-p.svg" alt=""> Home</a></li>
+            <li><a href="#"> <img src="icons/inv-p.svg" alt=""> Inventory</a></li>
+            <li><a href="/register"> <img src="icons/plus-p.svg" alt=""> Register</a></li>
+            <li><a href="#"> <img src="icons/pessoas-p.svg" alt=""> Users</a></li>
+            <li><a href="#"> <img src="icons/moon-p.svg" alt=""> Dark Mode</a></li>
+        </ul>
+    </div>
+    </header>
+    <main>
+        <div id="content">
+            <table>
+                <thead>
+                    <tr><th>Image</th><th>Id</th><th>Name</th><th>Desc</th><th>Qtd</th><th>Owner</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://mpng.subpng.com/20171216/bf9/pc-mouse-png-image-5a3567f6cffd85.8489681315134494628519.jpg" alt=""></td>
+                        <td>123</td>
+                        <td>Mouse USB</td>
+                        <td>Movimentar o cursor</td>
+                        <td>5</td>
+                        <td>Luan</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://mpng.subpng.com/20171216/bf9/pc-mouse-png-image-5a3567f6cffd85.8489681315134494628519.jpg" alt=""></td>
+                        <td>123</td>
+                        <td>Mouse USB</td>
+                        <td>Movimentar o cursor</td>
+                        <td>5</td>
+                        <td>Luan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

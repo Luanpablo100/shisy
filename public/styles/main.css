@@ -1,0 +1,162 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(208, 216, 216, 0.945);
+}
+
+.sidebar {
+    position: fixed;
+    top: 50px;
+    left: -200px;
+    background-color: rgba(243, 243, 243, 0.788);
+    width: 200px;
+    height: 100%;
+    transition: .3s;
+}
+
+.active {
+    left: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 20px 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    padding: 10px 20px;
+    color: rgba(12, 12, 12, 0.808);
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li a img {
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+
+.sidebarBtn {
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.sidebarBtn span {
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: antiquewhite;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .07);
+    border-radius: 15px;
+    transition: .2s;
+    transition-delay: .2s;
+
+}
+
+.sidebarBtn span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: antiquewhite;   
+    top: -10px;
+    left: 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .07);
+    border-radius: 15px;
+    transition-property: top, transform;
+    transition-delay: .5s, 0s;
+    transition-duration: 0.5s, 0.5s;
+}
+
+.sidebarBtn span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: antiquewhite;   
+    top: 10px;
+    left: 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .07);
+    border-radius: 15px;
+    transition-property: top, transform;
+    transition-delay: .5s, 0s;
+    transition-duration: 0.5s, 0.5s;
+}
+
+.sidebar.active .sidebarBtn span::before {
+    top: 0;
+    transform: rotate(45deg);
+    transition-delay: 0s, .5s;
+}
+
+.sidebar.active .sidebarBtn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition-delay: 0s, .5s;
+}
+
+.sidebar.active .sidebarBtn span {
+    background: transparent;
+    box-shadow: none;
+}
+
+.upbar {
+    width: 100vw;
+    background-color: rgba(18, 95, 139, 0.788);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+}
+
+.upbar h2 {
+    margin-left: 55px;
+    color: antiquewhite;
+}
+
+.upbar button {
+    color: antiquewhite;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 17px;
+}
+
+#content {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    transition: .3s;
+    right: 0;
+}
+
+#content.active {
+    margin-left: 200px;
+    width: 85vw;
+}
