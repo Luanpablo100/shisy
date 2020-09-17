@@ -1,0 +1,26 @@
+{
+  "name": "shisy",
+  "version": "1.0.0",
+  "description": "Web and mobile inventory management",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luanpablo100/shisy.git"
+  },
+  "author": "Luan Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luanpablo100/shisy/issues"
+  },
+  "homepage": "https://github.com/Luanpablo100/shisy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
