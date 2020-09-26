@@ -3,6 +3,6 @@ Web and mobile inventory management.
 
 <h1> In development </h1>
 
-# Dependecies
+<h3> Dependecies <h3>
 Express
 Sqlite3
